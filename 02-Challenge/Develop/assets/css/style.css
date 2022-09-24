@@ -76,6 +76,8 @@ p {
 }
 
 .benefits {
+    display: flex;
+    flex-direction: column;
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -89,6 +91,8 @@ p {
 /* Combined elements using the same styling into the same class */
 
 .benefit-sidebar {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 32px;
     color: #ffffff;
 }
@@ -107,6 +111,8 @@ p {
 /* Combined elements using the same styling into the same class */
 
 .content-boxes {
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -115,10 +121,14 @@ p {
     color: #ffffff;
 }
 .content-boxes img {
+    display: flex;
+    flex-wrap: wrap;
     max-height: 200px;
 }
 
 .content-boxes h2 {
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 20px;
     font-size: 36px;
 }
@@ -133,3 +143,59 @@ p {
 .footer h2 {
     font-size: 20px;
 }
+
+/* Fixes header problems and sizing issues on smaller screens */
+
+@media screen and (max-width: 1012px) {
+    .header {
+      padding: 40px;
+    }
+    .benefits { 
+       padding: 7.07px;
+       height: 60%;
+    }
+    .benefit-sidebar {
+        margin-bottom: 12px;
+    }
+    .header h1 {
+        font-size: 90px;
+    }
+    .header ul {
+        text-align: center;
+    }
+}
+  
+/* Fixes header problems and sizing issues on smaller screens */
+
+@media screen and (max-width: 853px) {
+    .header {
+      padding: 70px;
+      padding-bottom: 160px;
+      line-height: 60px;
+    }
+    .content-boxes img {
+        max-height: 100px;
+    }
+}
+
+/* Attempt to fix screen break at 800px */
+
+@media screen and (max-width: 800px) {
+    .benefits {
+        
+    }
+}
+
+/* Fixes header problems and sizing issues on smaller screens */
+ @media screen and (max-width: 669px) {
+    .header {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .content-boxes img{
+        max-height: 90px;
+    }
+    .content-boxes h2{
+        font-size: 26px;
+    }
+  }
