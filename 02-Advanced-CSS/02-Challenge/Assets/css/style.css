@@ -1,0 +1,290 @@
+/* * {
+    margin: 20px;
+} */
+
+body {
+    background-color: #d9dcd6;
+    margin: 0;
+}
+
+.leftAndRight {
+    display: flex;
+}
+
+.right-side {
+    display: inline-block;
+    width: 70%;
+    margin: 20px;
+}
+
+.left-side {
+    display: inline-block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #2a607c;
+    font-size: 24px;
+    vertical-align: top;
+    text-align: right;
+    margin: 20px;
+}
+
+.aboutMeHeader {
+    display: flex;
+    flex-direction: column;
+    font-size: 58px;
+    height: 200px;
+    margin: 20px;
+    border-right: #2a607c 2px solid;
+    padding-right: 10px;
+    max-width: 100%;
+}
+
+.workHeader {
+    display: flex;
+    flex-direction: column;
+    font-size: 58px;
+    height: 700px;
+    margin: 20px;
+    border-right: #2a607c 2px solid;
+    padding-right: 10px;
+    max-width: 100%;
+}
+
+.contactHeader {
+    display: flex;
+    flex-direction: column;
+    font-size: 58px;
+    margin: 20px;
+    border-right: #2a607c 2px solid;
+    padding-right: 10px;
+    height: 150px;
+    max-width: 100%;
+}
+
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/598/552/original/abstract-colorful-retro-low-poly-vector-background-with-cool-gradient-futuristic-pattern.jpg);
+    color: #ffffff;
+    font-size: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 150px;
+    vertical-align: top;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 56px;
+    margin: 5px; 
+    margin-top: 20px;
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    height: 200px;
+    margin: 20px;
+
+}
+
+.contact {
+    display: flex;
+}
+
+.header ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin: 20px;
+}
+.header ul li {
+    display: inline-block;
+    margin-left: 25px;
+    margin: 20px;
+}
+
+.work {
+    display: flex;
+    flex-direction: row;  
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: left;
+}
+
+.work1 {
+    border: #2a607c 2px solid;
+    margin: 10px;
+    padding: -10px;
+}
+
+.work2 {
+    border: #2a607c 2px solid;
+    margin: 10px;
+    padding: -10px;
+}
+
+.work3 {
+    border: #2a607c 2px solid;
+    margin: 10px;
+    padding: -10px;
+}
+
+.work4 {
+    border: #2a607c 2px solid;
+    margin: 10px;
+    padding: -10px;
+}
+
+.work5 {
+    border: #2a607c 2px solid;
+    margin: 10px;
+    padding: -10px;
+}
+
+.worktext {
+    position: absolute;
+    font-size: 70%;
+    margin-top: 20px;
+    background-color: #2a607c;
+
+}
+
+.work img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact {
+    justify-content: center;
+}
+
+.contact ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin: 20px;
+    margin-top: 60px;
+}
+
+.contact ul li{
+    display: inline-block;
+    margin: 20px;
+}
+
+
+
+
+
+/* Organize Work section on the right side of the page */
+
+
+/* Organize the images to look good and put the headings and descriptions in boxes on top of the images */
+/* .work img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+} */
+
+
+/* Make work images bigger with one big one and 4 neatly under it  */
+/* .work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.work1 {
+    width: 80%;
+    height: 50%;
+} */
+
+
+/* Make all h2 elements in a section on the left side of the page */
+/* aside h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.column-4 {
+    float: left;
+    width: 21%;
+    padding: 10px;
+    margin:20px;
+    height: 250px;
+  } */
+
+  @media screen and (max-width: 1359px) {
+    
+    .workHeader { 
+        height: 1000px;
+    }
+
+    .work {
+        justify-content: center;
+    } 
+
+    .contact {
+        flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 976px) {
+    
+    .workHeader { 
+        height: 970px;
+    }
+
+    .contact ul{
+        flex-direction: column;
+    }
+
+    .contact {
+        align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 784px) {
+    .workHeader { 
+        height: 920px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .workHeader { 
+        height: 830px;
+    }
+}
+
+
+@media screen and (max-width: 672px) {
+    .workHeader { 
+        height: 750px;
+    }
+}
+
+
+@media screen and (max-width: 618px) {
+    .workHeader { 
+        height: 650px;
+    }
+}
+
+
+
+
+
+
