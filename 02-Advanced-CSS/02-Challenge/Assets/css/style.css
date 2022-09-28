@@ -283,6 +283,61 @@ body {
     }
 }
 
+@media screen and (max-width: 500px) {
+    .workHeader { 
+        font-size: 25px;
+        height: 480px;
+    }
+    .aboutMeHeader {
+        font-size: 25px;   
+    }
+    .contactHeader {
+        font-size: 25px;   
+    }
+    .leftAndRight {
+        align-items: center;
+        font-size: smaller;
+        width: 80%;
+        justify-content: center;
+    }
+    .header h1{
+        font-size: 30px;
+    }
+    .header ul {
+        font-size: 15px;
+        margin-top: 5px;
+        margin-right: 5px;
+    }
+    .left-side {
+        margin-top: 5px;
+        margin-left: 95px;
+    }
+    .right-side { 
+        margin-top: 5px;
+        vertical-align: top;
+    }
+    .aboutMe {
+        font-size: 15px;
+        height: 200px;
+        margin: 5px;
+        justify-content: left;
+        width: 80%;
+        margin-top: 120px;
+    }
+    .work {
+        justify-content: left;
+        width: 80%;
+    }
+    .contact ul{
+        font-size: 15px;
+        width: 80%;
+        height: 180px;
+    }
+    .contact {
+        width: 80%;
+        height: 20%;
+    }
+}
 
 
 
