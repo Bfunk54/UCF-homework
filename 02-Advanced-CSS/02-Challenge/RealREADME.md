@@ -10,6 +10,10 @@ All sections will resize to any size screen you are using and will still work an
 
 The contact section includes links to my github and instagram.
 
+#
+## Link to the site:
+https://bfunk54.github.io/UCF-homework/
+
 
 
 #
